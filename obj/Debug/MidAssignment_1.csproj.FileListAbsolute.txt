@@ -1,0 +1,7 @@
+D:\10th sem\C#\Code\MidAssignment_1\MidAssignment_1\bin\Debug\MidAssignment_1.exe.config
+D:\10th sem\C#\Code\MidAssignment_1\MidAssignment_1\bin\Debug\MidAssignment_1.exe
+D:\10th sem\C#\Code\MidAssignment_1\MidAssignment_1\bin\Debug\MidAssignment_1.pdb
+D:\10th sem\C#\Code\MidAssignment_1\MidAssignment_1\obj\Debug\MidAssignment_1.csprojAssemblyReference.cache
+D:\10th sem\C#\Code\MidAssignment_1\MidAssignment_1\obj\Debug\MidAssignment_1.csproj.CoreCompileInputs.cache
+D:\10th sem\C#\Code\MidAssignment_1\MidAssignment_1\obj\Debug\MidAssignment_1.exe
+D:\10th sem\C#\Code\MidAssignment_1\MidAssignment_1\obj\Debug\MidAssignment_1.pdb
