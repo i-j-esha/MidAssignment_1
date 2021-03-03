@@ -35,6 +35,7 @@ namespace MidAssignment_1
 
             a[1].Deposit(5000);
             a[1].Withdraw(3000);
+            a[0].Transfer(1000, a[1]);
 
             bank.PrintAccountDetails();
 
