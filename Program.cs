@@ -22,24 +22,25 @@ namespace MidAssignment_1
             bank.AddAccount(new Account(36160, "Bushra", 20000, new Address("05", "41", "Dhaka", "Bangladesh\n")));
             bank.AddAccount(new Account(18101, "Alif", 10000, new Address("21", "52", "Dhaka", "Bangladdesh\n")));
 
-            Account[] a = new Account[3];
+           Account[] account = new Account[5];
 
-            a[0] = new Account(36160, "Bushra", 20000, new Address("05", "41", "Dhaka", "Bangladesh\n"));
-            bank.AddAccount(a[0]);
+            account[0] = new Account(36160, "Bushra", 20000, new Address("05", "41", "Dhaka", "Bangladesh\n"));
+            bank.AddAccount(account[0]);
 
-            a[0].Deposit(2000);
-            a[0].Withdraw(1500);
+            account[0].Deposit(2000);
+            account[0].Withdraw(1500);
 
-            a[1] = new Account(18101, "Alif", 10000, new Address("21", "52", "Dhaka", "Bangladdesh\n"));
-            bank.AddAccount(a[1]);
+            account[1] = new Account(18101, "Alif", 10000, new Address("21", "52", "Dhaka", "Bangladdesh\n"));
+            bank.AddAccount(account[1]);
 
-            a[1].Deposit(5000);
-            a[1].Withdraw(3000);
-            a[0].Transfer(1000, a[1]);
+            account[1].Deposit(5000);
+            account[1].Withdraw(3000);
+            account[0].Transfer(1000, account[1]);
+
 
             bank.PrintAccountDetails();
 
-
+          
         }
     }
 }
