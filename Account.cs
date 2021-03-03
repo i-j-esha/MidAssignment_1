@@ -36,6 +36,42 @@ namespace MidAssignment_1
             get { return this.balance; }
             set { this.balance = value; }
         }
+        
+        public void Deposit(double amount)
+		{
+			if (amount > 0)
+			{
+				Console.WriteLine("\nPrevious Balance: " + balance);
+				Console.WriteLine(+amount + "taka Deposited amount");
+
+				balance = balance + amount;
+
+				Console.WriteLine("Current Balance is: " + balance);
+			}
+			else
+			{
+				Console.WriteLine("\nCan Not Deposit...");
+			}
+		}
+		public void Withdraw(double amount)
+		{
+			if (amount < 0)
+			{
+				Console.WriteLine("\n you can not withdraw the amount.");
+			}
+			else if (amount > balance)
+			{
+				Console.WriteLine("\n this withdrawal would pass the balance");
+			}
+			else
+			{
+				this.balance = (this.balance - amount);
+				Console.WriteLine("\n" + amount + "taka is the withdrawn amount ");
+				Console.WriteLine("\nCurrent Balance: " + balance);
+			}
+		}
+		
+
 
         public void ShowAccountInformation()
         {
