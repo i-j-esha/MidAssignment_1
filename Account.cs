@@ -41,7 +41,7 @@ namespace MidAssignment_1
 		{
 			if (amount > 0)
 			{
-				Console.WriteLine("Previous Balance: " + balance);
+				Console.WriteLine("\nPrevious Balance: " + balance);
 				Console.WriteLine(+amount + "taka is the Deposited amount\n");
 
 				balance = balance + amount;
@@ -70,6 +70,27 @@ namespace MidAssignment_1
 				Console.WriteLine("\nCurrent Balance: " + balance);
 			}
 		}
+	    
+	    public void Transfer(double amount, Account recipient)
+		{
+			if (amount < 0)
+			{
+				Console.WriteLine("\n you can not transfer the amount.");
+			}
+			else if (balance >= amount)
+			{
+				Withdraw(amount);
+				recipient.Deposit(amount);
+				Console.WriteLine("\n" + this.accountName + " has transfered " + amount + " taka to " + recipient.accountName + " account");
+			}
+			else
+			{
+				Console.WriteLine("\nInsufficient Balance");
+			}
+			Console.WriteLine("\n" + this.accountName + "'s current balance is " + balance);
+			
+		}
+
 
 
         public void ShowAccountInformation()
