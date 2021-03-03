@@ -41,18 +41,17 @@ namespace MidAssignment_1
 		{
 			if (amount > 0)
 			{
-				Console.WriteLine("\nPrevious Balance: " + balance);
-				Console.WriteLine(+amount + "taka is the Deposited amount\n");
 
-				balance = balance + amount;
+				this.balance = this.balance + amount;
 
-				Console.WriteLine("Current Balance is: " + balance);
+				Console.WriteLine("Current Balance is: " + this.balance);
 			}
 			else
 			{
 				Console.WriteLine("\nCan Not Deposit...");
 			}
 		}
+	    
 		public void Withdraw(double amount)
 		{
 			if (amount < 0)
