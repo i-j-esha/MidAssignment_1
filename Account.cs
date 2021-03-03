@@ -71,7 +71,7 @@ namespace MidAssignment_1
 			}
 		}
 	    
-	    public void Transfer(double amount, Account recipient)
+	    public void Transfer(double amount, Account receiver)
 		{
 			if (amount < 0)
 			{
@@ -80,8 +80,8 @@ namespace MidAssignment_1
 			else if (balance >= amount)
 			{
 				Withdraw(amount);
-				recipient.Deposit(amount);
-				Console.WriteLine("\n" + this.accountName + " has transfered " + amount + " taka to " + recipient.accountName + " account");
+				receiver.Deposit(amount);
+				Console.WriteLine("\n" + this.accountName + " has transfered " + amount + " taka to " + receiver.accountName + " account");
 			}
 			else
 			{
@@ -90,6 +90,7 @@ namespace MidAssignment_1
 			Console.WriteLine("\n" + this.accountName + "'s current balance is " + balance);
 			
 		}
+
 
 
 
