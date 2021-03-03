@@ -41,8 +41,8 @@ namespace MidAssignment_1
 		{
 			if (amount > 0)
 			{
-				Console.WriteLine("\nPrevious Balance: " + balance);
-				Console.WriteLine(+amount + "taka Deposited amount");
+				Console.WriteLine("Previous Balance: " + balance);
+				Console.WriteLine(+amount + "taka is the Deposited amount\n");
 
 				balance = balance + amount;
 
@@ -61,16 +61,15 @@ namespace MidAssignment_1
 			}
 			else if (amount > balance)
 			{
-				Console.WriteLine("\n this withdrawal would pass the balance");
+				Console.WriteLine(" \nthis withdrawal would pass the balance");
 			}
 			else
 			{
 				this.balance = (this.balance - amount);
-				Console.WriteLine("\n" + amount + "taka is the withdrawn amount ");
+				Console.WriteLine( + amount + "taka is the withdrawn amount ");
 				Console.WriteLine("\nCurrent Balance: " + balance);
 			}
 		}
-		
 
 
         public void ShowAccountInformation()
