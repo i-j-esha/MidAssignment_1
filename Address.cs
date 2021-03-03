@@ -45,11 +45,10 @@ namespace MidAssignment_1
 
         }
 
-        public void GetAddress()
+         public string GetAddress()
         {
-            Console.WriteLine("House No- " + this.houseNo + "\nRoad No- " + this.roadNo + "\nCity Name: " + this.city + "\nCountry Name: " + this.country);
+            return ("House No- " + this.houseNo + "\nRoad No- " + this.roadNo + "\nCity Name: " + this.city + "\nCountry Name: " + this.country);
         }
-
 
     }
 }
